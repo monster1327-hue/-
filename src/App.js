@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
+  const subject=props.subject;
+  console.log(props)
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hello, {subject}
         </a>
       </header>
     </div>
